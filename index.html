@@ -86,6 +86,60 @@
 <a name="stdinjava" class="anchor" href="#stdinjava"><span class="octicon octicon-link"></span></a>StdIn.java</h2>
 
 <p>Helps read in the data.</p>
+
+<h1>
+<a name="program-phase-2" class="anchor" href="#program-phase-2"><span class="octicon octicon-link"></span></a>Program Phase 2:</h1>
+
+<h2>
+<a name="bisonmapsjava-1" class="anchor" href="#bisonmapsjava-1"><span class="octicon octicon-link"></span></a>BisonMaps.java</h2>
+
+<p>Gets the instance of DataConnector. The main program displays a main menu, checks the user input for valid menu options and then sends to corresponding method in DataConnector or quits the program.</p>
+
+<h2>
+<a name="dataconnectorjava-singleton-class" class="anchor" href="#dataconnectorjava-singleton-class"><span class="octicon octicon-link"></span></a>DataConnector.java (singleton class)</h2>
+
+<p>Establishes a connection to a Heroku database and queries all of the data and puts them in data structures.</p>
+
+<p>showBuildings, showResources, and showDepartments methods use the descriptions, layers, and departmentLocation data structures respectively to display information.</p>
+
+<p>getDirections and findResources methods send data structure information to Euclidean to create the graph and then go to the printPath method to display results.</p>
+
+<p>printPath method sends start and end points to Dijkstra getPath in order to get the shortest path in an array of steps then prints it out.</p>
+
+<h2>
+<a name="dijkstrajava-1" class="anchor" href="#dijkstrajava-1"><span class="octicon octicon-link"></span></a>Dijkstra.java</h2>
+
+<p>Dijkstra’s algorithm goes through each point (starting with one of the two inputed numbers) and finds the adjacent point with the shortest distance then switches to that point and repeats the same process until connects the two inputed numbers.</p>
+
+<h2>
+<a name="euclideangraphjava-1" class="anchor" href="#euclideangraphjava-1"><span class="octicon octicon-link"></span></a>EuclideanGraph.java</h2>
+
+<p>Creates a graph on points in the plane, the weights of the edges being the Euclidean distances.</p>
+
+<h2>
+<a name="injava-1" class="anchor" href="#injava-1"><span class="octicon octicon-link"></span></a>In.java</h2>
+
+<p>Reads in the data.</p>
+
+<h2>
+<a name="indexpqjava-1" class="anchor" href="#indexpqjava-1"><span class="octicon octicon-link"></span></a>IndexPQ.java</h2>
+
+<p>Keeps track a copy of the priorities in a queue.</p>
+
+<h2>
+<a name="initeratorjava-1" class="anchor" href="#initeratorjava-1"><span class="octicon octicon-link"></span></a>InIterator.java</h2>
+
+<p>Iterates to the next element.</p>
+
+<h2>
+<a name="pointjava-1" class="anchor" href="#pointjava-1"><span class="octicon octicon-link"></span></a>Point.java</h2>
+
+<p>Create points in the plane and determines the Euclidean distance between the point and the main point that is looking for shortest distance.</p>
+
+<h2>
+<a name="stdinjava-1" class="anchor" href="#stdinjava-1"><span class="octicon octicon-link"></span></a>StdIn.java</h2>
+
+<p>Helps read in the data. (Worked perfectly before but for some reason in main menu there is a problem now with user being able to enter in another menu option. However, works perfectly fine with sub menu in findResources method.)</p>
         </article>
       </div>
     </div>
