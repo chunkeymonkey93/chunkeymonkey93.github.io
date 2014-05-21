@@ -1,4 +1,5 @@
 /*************************************************************************
+ *  Alyssa Bullock
  *  Compilation:  javac BisonMaps.java
  *  Execution:    java BisonMaps mapfile < input.txt
  *  Dependencies: EuclideanGraph.java Dijkstra.java In.java StdIn.java
